@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Animation</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+        <div class="container"></div>
+        <script>
+            var num = parseInt(prompt("Enter the number of boxes"));
+            var container = document.querySelector('.container');
+            for(var i=0; i < num; i++){
+                var box = document.createElement('div');
+                box.classList.add('box');
+                container.appendChild(box);
+            }
+            var boxes = document.querySelectorAll('.box');
+            var count = 0;
+            var timer = setInterval(function (){
+                if(count < boxes.length){
+                    boxes[count].style.transform = "translateY(0)";
+                    boxes[count].style.opacity = 1;
+                }
+                else{
+                    clearInterval(timer);
+                }
+                count++;
+            }, 500);
+        </script>
+    </body>
+</html>

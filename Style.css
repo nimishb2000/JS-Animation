@@ -7,11 +7,11 @@ body{
     background-color: #110e17;
     overflow-x: hidden;
 }
-.box{
+.line{
     width: 1vw;
-    margin: 4em 1.6% 0;
+    margin: 4em 1% 0;
     padding-bottom: 30%;
-    background: #63ff48;
+    background: linear-gradient(blue, #63ff48, blue);
     border-radius: 2.5em;
     display: inline-block;
     transform: translateY(-4em);

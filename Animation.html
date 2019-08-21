@@ -8,27 +8,6 @@
     </head>
     <body>
         <div class="container"></div>
-        <script>
-            var num = parseInt(prompt("Enter the number of lines"));
-            var container = document.querySelector('.container');
-            for(var i=0; i < num; i++){
-                var box = document.createElement('div');
-                box.classList.add('box');
-                container.appendChild(box);
-            }
-            var boxes = document.querySelectorAll('.box');
-            var count = 0;
-            var timer = setInterval(create, 500);
-            function create(){
-                if(count < boxes.length){
-                    boxes[count].style.transform = "translateY(0)";
-                    boxes[count].style.opacity = 1;
-                }
-                else{
-                    clearInterval(timer);
-                }
-                count++;
-            }
-        </script>
+        <script src="Script.js"></script>
     </body>
 </html>

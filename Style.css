@@ -5,16 +5,13 @@
 }
 body{
     background-color: #110e17;
-}
-.container{
-    width: 90vw;
-    margin: 0 auto;
+    overflow-x: hidden;
 }
 .box{
-    width: 30%;
+    width: 1vw;
     margin: 4em 1.6% 0;
     padding-bottom: 30%;
-    background-image: radial-gradient(green, blue 33%, red);
+    background: #63ff48;
     border-radius: 2.5em;
     display: inline-block;
     transform: translateY(-4em);

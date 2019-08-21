@@ -18,7 +18,8 @@
             }
             var boxes = document.querySelectorAll('.box');
             var count = 0;
-            var timer = setInterval(function (){
+            var timer = setInterval(create, 500);
+            function create(){
                 if(count < boxes.length){
                     boxes[count].style.transform = "translateY(0)";
                     boxes[count].style.opacity = 1;
@@ -27,7 +28,7 @@
                     clearInterval(timer);
                 }
                 count++;
-            }, 500);
+            }
         </script>
     </body>
 </html>
